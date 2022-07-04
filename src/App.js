@@ -39,10 +39,11 @@ export default function App() {
           die :
           { value: randomDieValue(), held: false, id: i + 1 }
       ))
-      setNumber(number => number+1)
+      setNumber(number => number + 1)
     } else {
       setDice(allNewDice())
       setTenzies(false)
+      setNumber(0)
     }
   }
 
